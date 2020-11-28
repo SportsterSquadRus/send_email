@@ -1,3 +1,6 @@
 env
 db.sqlite3
+send_email/passwords.py
 send_email/__pycache__
+main/__pycache__
+main/migrations/__pycache__
