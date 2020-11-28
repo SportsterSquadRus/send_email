@@ -8,11 +8,8 @@
 <body>
     <form action="{% url 'contact' %}" method="POST">
         {% csrf_token %}
-        {% form.as_p %}
+        {{ form.as_p }}
         <button type="submit"> send</button>
-
-
-
     </form>
     
 </body>
