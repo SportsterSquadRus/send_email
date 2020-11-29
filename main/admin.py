@@ -1,7 +1,9 @@
 """django-admin module"""
 from django.contrib import admin
+from .models import Contact
 
-@admin.register
+
+@admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
     """ admin """
     list_display = ('name', 'email')

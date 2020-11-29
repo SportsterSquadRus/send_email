@@ -1,4 +1,5 @@
 env
+celerybeat-schedule
 db.sqlite3
 send_email/passwords.py
 send_email/__pycache__
