@@ -14,5 +14,4 @@ def send_spam_email(user_email):
 def send_beat_email():
     """send mail every 2 mins"""
     for contact in Contact.objects.all():
-        print(contact.email)
         send_beat(contact.email)
