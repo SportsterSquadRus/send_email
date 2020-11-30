@@ -1,13 +1,13 @@
 """celery tasks"""
 from send_email.celery import app
-from .service import send, send_beat
+from .service import send_beat, send_once
 from .models import Contact
 
 # celery -A send_spam_email -l info
 @app.task
 def send_spam_email(user_email):
     """spam task"""
-    send(user_email)
+    send_once(user_email)
 
 # celery -A send_email beat -l info
 @app.task
